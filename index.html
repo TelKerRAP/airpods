@@ -4,283 +4,10 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>AirPods Pro | Sonido Premium</title>
+<link rel="stylesheet" href="style.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Inter',sans-serif;
-}
-
-body{
-    background:#000;
-    color:#fff;
-    overflow-x:hidden;
-}
-
-/* NAV */
-
-nav{
-    width:100%;
-    padding:20px 8%;
-    position:fixed;
-    top:0;
-    z-index:999;
-    backdrop-filter:blur(20px);
-    background:rgba(0,0,0,.65);
-    border-bottom:1px solid rgba(255,255,255,.06);
-}
-
-.nav-container{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.logo{
-    font-size:1.3rem;
-    font-weight:700;
-    letter-spacing:1px;
-}
-
-.nav-links{
-    display:flex;
-    gap:35px;
-}
-
-.nav-links a{
-    color:#d1d1d1;
-    text-decoration:none;
-    font-size:.95rem;
-    transition:.3s;
-}
-
-.nav-links a:hover{
-    color:#fff;
-}
-
-/* HERO */
-
-.hero{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:120px 8% 60px;
-    background:
-    radial-gradient(circle at top,#1f1f1f 0%,#000 60%);
-}
-
-.hero-container{
-    width:100%;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    align-items:center;
-    gap:60px;
-}
-
-.hero-text h1{
-    font-size:4.5rem;
-    line-height:1;
-    margin-bottom:25px;
-    font-weight:700;
-}
-
-.hero-text h1 span{
-    color:#d6d6d6;
-}
-
-.hero-text p{
-    color:#b4b4b4;
-    font-size:1.1rem;
-    line-height:1.8;
-    margin-bottom:35px;
-    max-width:520px;
-}
-
-.price{
-    font-size:2.3rem;
-    font-weight:700;
-    margin-bottom:30px;
-}
-
-.price span{
-    font-size:1rem;
-    color:#8e8e8e;
-    font-weight:400;
-}
-
-.buttons{
-    display:flex;
-    gap:18px;
-    flex-wrap:wrap;
-}
-
-.btn{
-    padding:15px 32px;
-    border-radius:999px;
-    text-decoration:none;
-    font-weight:600;
-    transition:.3s;
-}
-
-.btn-primary{
-    background:#fff;
-    color:#000;
-}
-
-.btn-primary:hover{
-    transform:scale(1.05);
-}
-
-.btn-secondary{
-    border:1px solid rgba(255,255,255,.2);
-    color:#fff;
-}
-
-.btn-secondary:hover{
-    background:#fff;
-    color:#000;
-}
-
-/* PRODUCT IMAGE */
-
-.hero-image{
-    display:flex;
-    justify-content:center;
-    position:relative;
-}
-
-.hero-image img{
-    width:100%;
-    max-width:520px;
-    filter:drop-shadow(0 0 40px rgba(255,255,255,.18));
-    animation:float 5s ease-in-out infinite;
-}
-
-@keyframes float{
-    0%{transform:translateY(0px);}
-    50%{transform:translateY(-18px);}
-    100%{transform:translateY(0px);}
-}
-
-/* FEATURES */
-
-.features{
-    padding:100px 8%;
-    background:#050505;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:70px;
-}
-
-.section-title h2{
-    font-size:3rem;
-    margin-bottom:10px;
-}
-
-.section-title p{
-    color:#8d8d8d;
-}
-
-.features-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-    gap:25px;
-}
-
-.feature-card{
-    background:#111;
-    border:1px solid rgba(255,255,255,.05);
-    border-radius:28px;
-    padding:35px;
-    transition:.3s;
-}
-
-.feature-card:hover{
-    transform:translateY(-8px);
-    border-color:rgba(255,255,255,.15);
-}
-
-.feature-card h3{
-    margin:20px 0 12px;
-    font-size:1.2rem;
-}
-
-.feature-card p{
-    color:#9c9c9c;
-    line-height:1.7;
-}
-
-.icon{
-    font-size:2rem;
-}
-
-/* CTA */
-
-.cta{
-    padding:120px 8%;
-    text-align:center;
-    background:linear-gradient(to bottom,#050505,#000);
-}
-
-.cta h2{
-    font-size:3rem;
-    margin-bottom:20px;
-}
-
-.cta p{
-    color:#a1a1a1;
-    max-width:700px;
-    margin:auto;
-    line-height:1.8;
-    margin-bottom:35px;
-}
-
-/* FOOTER */
-
-footer{
-    padding:30px 8%;
-    border-top:1px solid rgba(255,255,255,.08);
-    text-align:center;
-    color:#7c7c7c;
-    font-size:.9rem;
-}
-
-/* RESPONSIVE */
-
-@media(max-width:768px){
-
-    .hero-text{
-        text-align:center;
-    }
-
-    .hero-text h1{
-        font-size:3rem;
-    }
-
-    .buttons{
-        justify-content:center;
-    }
-
-    .nav-links{
-        display:none;
-    }
-
-    .section-title h2{
-        font-size:2.2rem;
-    }
-
-    .cta h2{
-        font-size:2.2rem;
-    }
-}
-</style>
 </head>
 <body>
 
@@ -294,7 +21,8 @@ footer{
             <a href="#">Inicio</a>
             <a href="#">Características</a>
             <a href="#">Especificaciones</a>
-            <a href="#">Comprar</a>
+            <a href="#cta">Comprar</a>
+            <a href="#oem-info">Que es OEM?</a>
         </div>
     </div>
 </nav>
@@ -399,6 +127,46 @@ footer{
     <a href="https://wa.me/5210000000000" class="btn btn-primary">
         Pedir por WhatsApp
     </a>
+
+</section>
+
+<section class="section" id="oem-info">
+
+    <div class="section-title">
+        <h2>¿Qué Significa OEM 1:1?</h2>
+
+        <p>
+            Conoce el significado real detrás de los productos OEM 1:1 y cómo funcionan dentro del mercado tecnológico actual.
+        </p>
+    </div>
+
+    <div class="requirements">
+
+        <div class="req-box">
+            <h3>Significado OEM 1:1</h3>
+
+            <ul>
+                <li>Diseño visual muy similar al producto original.</li>
+                <li>Tamaño, acabados y apariencia tipo premium.</li>
+                <li>Compatible con dispositivos iPhone y Android.</li>
+                <li>Funciones inspiradas en modelos originales.</li>
+                <li>Precio más accesible que un producto oficial.</li>
+            </ul>
+        </div>
+
+        <div class="req-box">
+            <h3>Importante Saber</h3>
+
+            <ul>
+                <li>No son productos oficiales de Apple.</li>
+                <li>No cuentan con garantía oficial Apple.</li>
+                <li>La calidad puede variar según el fabricante.</li>
+                <li>Muchos modelos incluyen funciones premium similares.</li>
+                <li>Ideales para clientes que buscan buena experiencia a menor costo.</li>
+            </ul>
+        </div>
+
+    </div>
 
 </section>
 
